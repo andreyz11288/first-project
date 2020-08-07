@@ -11,15 +11,26 @@
     align-items: center;
     padding-top: 40px;
     width: 100%;
-    padding-left: 31px;
-    padding-right: 31px;
-    // position: absolute;
+    max-width: $mobile;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     z-index: 5;
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+    }
   }
   & .logo {
     fill: $white-color;
     height: 56px;
     width: 69px;
+    @media screen and (min-width: $tablet) {
+      fill: $main-text;
+    }
   }
   .menu-button {
     border: none;
@@ -44,6 +55,7 @@
   }
   & .menu-container {
     display: flex;
+    width: 100%;
     @media screen and (max-width: 767px) {
       flex-direction: column;
       align-items: flex-start;
@@ -60,13 +72,14 @@
 
       background-color: $white-color;
     }
-
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: row;
     }
     &.is-open {
-      display: none;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
   }
   // Навигация
@@ -120,6 +133,10 @@
       :focus-within {
         color: $accent;
       }
+    }
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      z-index: 7;
     }
   }
 }
