@@ -176,6 +176,12 @@
   letter-spacing: 0.05em;
 
   color: $main-text;
+  @media screen and (min-width: $tablet) {
+    padding-left: 65px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 47px;
+  }
   & + p {
     margin-top: 27px;
     margin-left: 2px;
@@ -187,5 +193,14 @@
 
     text-align: center;
     color: $accent;
+  }
+}
+.ad2 {
+  padding-left: 64px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 72px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 52px;
   }
 }
