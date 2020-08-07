@@ -52,7 +52,7 @@
       top: 0;
       right: 0;
       width: 65%;
-      height: 580px;
+      // height: 580px;
       // дал 580 потому что закривает секцию О нас
       // height: 796px;
       padding-top: 118px;
@@ -77,9 +77,49 @@
     line-height: 1.38;
     /* identical to box height */
     letter-spacing: 0.1em;
+    & .item {
+      @media screen and (max-width: 767px) {
+        &:nth-child(n + 2) {
+          margin-top: 24px;
+        }
+      }
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+    }
   }
   // Контакты
   & .contacts {
     margin-bottom: 64px;
+    & .item {
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  & .we-in-soc {
+    @media screen and (max-width: 767px) {
+      // В макете падинг больше но он перекроет секцию
+      padding-bottom: 24px;
+      transform: translateX(100%);
+      & .item:nth-child(n + 2) {
+        margin-top: 24px;
+      }
+      // Позиционирование линии
+      // & .before-second-head > a:before {
+      //   right: 125%;
+      // }
+    }
+    & .item {
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+    }
   }
 }
