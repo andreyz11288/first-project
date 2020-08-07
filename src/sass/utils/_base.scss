@@ -45,3 +45,7 @@ a {
   color: inherit;
   font-family: inherit;
 }
+*:hover,
+:focus-within {
+  transition: $function-of-time $transition-duration;
+}

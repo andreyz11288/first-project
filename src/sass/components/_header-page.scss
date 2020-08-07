@@ -11,15 +11,26 @@
     align-items: center;
     padding-top: 40px;
     width: 100%;
-    padding-left: 31px;
-    padding-right: 31px;
-    // position: absolute;
+    max-width: $mobile;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     z-index: 5;
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+    }
   }
   & .logo {
     fill: $white-color;
     height: 56px;
     width: 69px;
+    @media screen and (min-width: $tablet) {
+      fill: $main-text;
+    }
   }
   .menu-button {
     border: none;
@@ -44,6 +55,7 @@
   }
   & .menu-container {
     display: flex;
+    width: 100%;
     @media screen and (max-width: 767px) {
       flex-direction: column;
       align-items: flex-start;
@@ -52,19 +64,22 @@
       top: 0;
       right: 0;
       width: 65%;
-      height: 796px;
+      // height: 580px;
+      // дал 580 потому что закривает секцию О нас
+      // height: 796px;
       padding-top: 118px;
       padding-left: 40px;
 
       background-color: $white-color;
     }
-
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: row;
     }
     &.is-open {
-      display: none;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
   }
   // Навигация
@@ -75,9 +90,53 @@
     line-height: 1.38;
     /* identical to box height */
     letter-spacing: 0.1em;
+    & .item {
+      @media screen and (max-width: 767px) {
+        &:nth-child(n + 2) {
+          margin-top: 24px;
+        }
+      }
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+    }
   }
   // Контакты
   & .contacts {
     margin-bottom: 64px;
+    & .item {
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  & .we-in-soc {
+    @media screen and (max-width: 767px) {
+      // В макете падинг больше но он перекроет секцию
+      padding-bottom: 24px;
+      transform: translateX(100%);
+      & .item:nth-child(n + 2) {
+        margin-top: 24px;
+      }
+      // Позиционирование линии
+      // & .before-second-head > a:before {
+      //   right: 125%;
+      // }
+    }
+    & .item {
+      &:hover,
+      :focus-within {
+        color: $accent;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      z-index: 7;
+    }
   }
 }
