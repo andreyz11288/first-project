@@ -14,6 +14,9 @@ $price-bg: #111319;
 $footer-bg: #191c26;
 $footer-input-color: rgba(157, 164, 189, 0.4);
 $letter-spacing-body: 0.02em;
+// mixin
+$function-of-time: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
 
 $mobile: 480px;
 $tablet: 768px;
