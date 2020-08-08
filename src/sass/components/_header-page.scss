@@ -4,18 +4,19 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  padding-bottom: 0;
+  padding-top: 40px;
 
   & .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
     width: 100%;
     max-width: $mobile;
+    // padding-left: 31px;
+    // padding-right: 31px;
 
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    // position: absolute;
     z-index: 5;
     @media screen and (min-width: $tablet) {
       max-width: $tablet;
