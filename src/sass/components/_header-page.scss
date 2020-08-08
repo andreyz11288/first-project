@@ -91,6 +91,12 @@
     line-height: 1.38;
     /* identical to box height */
     letter-spacing: 0.1em;
+    color: $main-text;
+    @media screen and (min-width: $tablet) {
+      font-size: 12px;
+      line-height: 1.33;
+      color: $white-color;
+    }
     & .item {
       @media screen and (max-width: 767px) {
         &:nth-child(n + 2) {
@@ -106,13 +112,26 @@
   // Контакты
   & .contacts {
     margin-bottom: 64px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
     & .item {
+      color: $main-text;
       &:hover,
       :focus-within {
         color: $accent;
       }
       @media screen and (max-width: 767px) {
         margin-bottom: 24px;
+      }
+      @media screen and (min-width: $tablet) {
+        color: $white-color;
+      }
+    }
+    & .button-link-text-white {
+      @media screen and (min-width: $tablet) {
+        color: $white-color;
       }
     }
   }

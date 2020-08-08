@@ -13,7 +13,7 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  background: $main-text;
+  background: transparent;
   color: $white-color;
   padding: 12px 37px;
   @include transition(color);
@@ -41,7 +41,7 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  background: $white-color;
+  background: transparent;
   color: $main-text;
   padding: 12px 19px;
   @include transition(color);
@@ -67,7 +67,7 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  background: $main-text;
+  background: transparent;
   color: $white-color;
   padding: 12px 19px;
   @include transition(color);
