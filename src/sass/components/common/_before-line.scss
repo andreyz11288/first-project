@@ -1,13 +1,22 @@
 .before-second-head {
-    position: relative;
+  position: relative;
 
-    &>h2:before {
-        display: block;
-        width: 60px;
-        content: '';
-        position: absolute;
-        border-bottom: 1px solid $main-text;
-        top: 49%;
-        left: 0;
-    }
+  & > h2:before {
+    display: block;
+    width: 60px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $main-text;
+    top: 49%;
+    left: 0;
+  }
+  & > .after-line:before {
+    display: block;
+    width: 60px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $main-text;
+    top: 49%;
+    right: 125%;
+  }
 }
