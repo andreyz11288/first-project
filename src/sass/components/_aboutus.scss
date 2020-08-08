@@ -4,25 +4,19 @@
 .about-info {
     position: relative;
     display: block;
-    padding-top: 84px;
-    padding-bottom: 84px;
     max-width: 418px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 100px;
         max-width: 330px;
     }
     @media screen and (min-width: 1200px) {
         margin-left: 64px;
-        padding-top: 130px;
-        padding-bottom: 130px;
         max-width: none;
     }
 }
 
 .about-images {
     margin-right: 30px;
-    padding-top: 100px;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -30,10 +24,7 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        // flex-wrap: nowrap;
         margin-right: 0;
-        padding-top: 130px;
-        // width: 100%;
     }
 }
 
