@@ -4,24 +4,40 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  padding-bottom: 0;
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
 
   & .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
     width: 100%;
     max-width: $mobile;
+    padding-left: 31px;
+    padding-right: 31px;
 
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    // position: absolute;
     z-index: 5;
     @media screen and (min-width: $tablet) {
-      max-width: $tablet;
+      position: absolute;
+      display: flex;
+      transform-origin: left;
+      transform: rotate(90deg);
+      top: -51%;
+      left: 5%;
+      // width: 680px;
+      // height: 120px;
+      min-width: 683px;
+      min-height: 121px;
+      padding-left: 32px;
+      padding-top: 32px;
+
+      background-color: $white-color;
     }
     @media screen and (min-width: $desktop) {
-      max-width: $desktop;
+      top: -75%;
     }
   }
   & .logo {
@@ -30,6 +46,8 @@
     width: 69px;
     @media screen and (min-width: $tablet) {
       fill: $main-text;
+      transform: rotate(-90deg);
+      margin-bottom: 32px;
     }
   }
   .menu-button {
@@ -72,9 +90,19 @@
 
       background-color: $white-color;
     }
+
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      padding-left: 144px;
+      padding-right: 39px;
+    }
+    @media screen and (min-width: $desktop) {
+      // 39+16=>55
+      padding-left: 160px;
+      padding-right: 55px;
+      align-items: baseline;
     }
     &.is-open {
       @media screen and (max-width: 767px) {
@@ -90,10 +118,33 @@
     line-height: 1.38;
     /* identical to box height */
     letter-spacing: 0.1em;
+    color: $main-text;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      // ровняем в линию
+      padding-top: 12px;
+
+      font-size: 12px;
+      line-height: 1.33;
+      color: $white-color;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 0;
+    }
+    & .list {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+      }
+    }
     & .item {
       @media screen and (max-width: 767px) {
         &:nth-child(n + 2) {
           margin-top: 24px;
+        }
+      }
+      @media screen and (min-width: $tablet) {
+        &:nth-child(n + 2) {
+          margin-left: 24px;
         }
       }
       &:hover,
@@ -105,7 +156,22 @@
   // Контакты
   & .contacts {
     margin-bottom: 64px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+    & .list {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: baseline;
+      }
+    }
     & .item {
+      color: $main-text;
       &:hover,
       :focus-within {
         color: $accent;
@@ -113,9 +179,29 @@
       @media screen and (max-width: 767px) {
         margin-bottom: 24px;
       }
+      @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: 1.33;
+        color: $white-color;
+        margin-top: 24px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-top: 0;
+        margin-right: 40px;
+      }
+    }
+    & .button-link-text-white {
+      @media screen and (min-width: $tablet) {
+        color: $white-color;
+      }
     }
   }
   & .we-in-soc {
+    .list {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+      }
+    }
     @media screen and (max-width: 767px) {
       // В макете падинг больше но он перекроет секцию
       padding-bottom: 24px;
@@ -137,6 +223,16 @@
     @media screen and (min-width: $tablet) {
       position: absolute;
       z-index: 7;
+      transform: rotate(-90deg);
+      left: -7%;
+      bottom: -290%;
+      & .item:nth-child(n + 2) {
+        margin-left: 40px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      left: -3%;
+      bottom: -465%;
     }
   }
 }

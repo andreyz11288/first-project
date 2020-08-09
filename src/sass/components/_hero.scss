@@ -4,7 +4,11 @@
   height: auto;
 
   max-width: 1125px;
-  min-height: 560px;
+  min-height: 580px;
+  // дал ширину так как при дазмере больше 480 лого на белый фон уходит
+  width: auto;
+  // обнуляю падинги контейнера, так как затрагивают шапку
+  padding: 0;
 
   background-image: url('../images/hero_1125.jpg');
 
@@ -15,6 +19,9 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero_1125@2x.jpg');
+  }
+  @media screen and (min-width: $tablet) {
+    min-height: 680px;
   }
   // @media screen and (min-width: $tablet) {
   //   margin-left: 159px;
@@ -29,6 +36,8 @@
   max-width: 306px;
   width: 100%;
   padding-top: 208px;
+  // переношу падинги с обнулёного контейнера
+  padding-left: 31px;
 
   @media screen and (min-width: $tablet) {
     max-width: 444px;
