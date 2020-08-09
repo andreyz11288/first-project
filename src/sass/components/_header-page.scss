@@ -3,24 +3,24 @@
   flex-direction: row;
   position: absolute;
   z-index: 1;
-  padding-bottom: 0;
   width: 100%;
+  padding-bottom: 0;
   padding-top: 40px;
   padding-left: 0;
   padding-right: 0;
+
   & .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // max-width: $mobile;
+    width: 100%;
+    max-width: $mobile;
     padding-left: 31px;
     padding-right: 31px;
-
+    margin-left: auto;
+    margin-right: auto;
     // position: absolute;
     z-index: 5;
-    @media screen and (max-width: 767px) {
-      width: 100%;
-    }
     @media screen and (min-width: $tablet) {
       position: absolute;
       display: flex;
