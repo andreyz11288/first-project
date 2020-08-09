@@ -1,5 +1,4 @@
 .section-workers {
-  /*padding-top: 84px;*/
   background-color: $secondary-white;
 }
 
@@ -93,7 +92,6 @@
 }
 
 .workers-list {
-  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -112,25 +110,11 @@
 }
 
 .workers-item {
-  /*padding-bottom: 64px;*/
-  @media screen and (min-width: 480px) {
-    /*padding-bottom: 84px;*/
-  }
-  @media screen and (min-width: 768px) {
-    /*padding-bottom: 92px;*/
-  }
 
   @media screen and (min-width: 1200px) {
-   /* padding-bottom: 130px;*/
       &:not(:last-child) {
           margin-right: 30px;
       }
-  }
-}
-
-.worker-item:not(:last-child) {
-  @media screen and (max-width: 1199px) {
-      /*margin-bottom: 64px;*/
   }
 }
 
@@ -145,9 +129,8 @@
 }
 
 .name {
-  margin-top: 30px;
-  margin-bottom: 8px;
-  // padding-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 8px;
 
   font-family: $secondary-font;
   font-style: normal;
@@ -163,8 +146,8 @@
 }
 
 .speciality {
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding-top: 0;
+  padding-bottom: 30px;
 
   font-family: $secondary-font;
   font-style: normal;
