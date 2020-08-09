@@ -7,7 +7,8 @@
     max-width: $tablet;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 1200px;
+    max-width: 1280px;
+    padding-top: 121px;
   }
 }
 .come-to-us-text {
@@ -25,7 +26,7 @@
 }
 
 .come-to-us {
-  padding: 84px 0px 84px 0px;
+  // padding: 84px 0px 84px 0px;
 
   max-width: 418px;
   width: 100%;
@@ -34,11 +35,11 @@
   background-color: $white-color;
   @media screen and (min-width: $tablet) {
     max-width: 689px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 121px 0px 130px 0px;
+    // padding: 121px 0px 130px 0px;
     max-width: 970px;
     padding-left: 0px;
     padding-right: 0px;
