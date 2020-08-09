@@ -11,7 +11,7 @@
     }
     @media screen and (min-width: 1200px) {
         margin-left: 64px;
-        max-width: none;
+        max-width: 500px;
     }
 }
 
@@ -97,6 +97,9 @@
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
+    @media screen and (min-width: 1200px) {
+        text-align: justify;
+    }
 
     color: $secondary-text;
 }
