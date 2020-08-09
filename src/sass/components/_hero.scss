@@ -71,7 +71,8 @@
     line-height: 26px;
     letter-spacing: $letter-spacing-body;
     color: $additional-text;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
+      max-width: 480px;
       font-size: 18px;
       line-height: 30px;
     }
