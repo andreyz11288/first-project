@@ -17,7 +17,8 @@
     max-width: $mobile;
     padding-left: 31px;
     padding-right: 31px;
-
+    margin-left: auto;
+    margin-right: auto;
     // position: absolute;
     z-index: 5;
     @media screen and (min-width: $tablet) {
