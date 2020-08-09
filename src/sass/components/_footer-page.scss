@@ -26,11 +26,7 @@
 .first-section{
     background: $footer-bg;
     width: 100%;
-
-@media screen and (min-width: $desktop){
-    margin-right: -15px; 
-}}
-
+}
 
 .first-section > .container{
     display: flex;
@@ -44,11 +40,11 @@
 }
 
 @media screen and(min-width: $desktop){
-    max-width: 615px;
+    max-width: 600px;
     margin-right: 0;
     padding-top: 130px;
     padding-bottom: 193px;
-    padding-right: 40px;
+    padding-right: 15px;
 }}
 
 
@@ -61,9 +57,7 @@
     
 @media screen and (min-width: $desktop){
     max-width: 560px;
-}
-}
-
+}}
 
 
 .form-field{
@@ -77,7 +71,6 @@
     width: 270px;
 
 &.short{width: 260px;}}}
-
 
 
 .form-field > input{
@@ -170,7 +163,7 @@
 }}
 
 @media screen and (min-width: $desktop) {
-    margin-left: 15px;
+    // margin-left: -15px;
 
     background-image: url(../images/footer625.png);
 
@@ -193,9 +186,15 @@
    align-items: center;}
 
 @media screen and(min-width: $desktop){
-    padding: 130px 100px;
-    width: 560px;
+    padding: 130px 15px;
+    width: 600px;
     margin-left: 0;}}
+
+.second-section .content{
+    @media screen and(min-width: $desktop){
+        margin-left: 100px;
+}}
+
 
 .second-section .title{
     margin-bottom: 40px;
@@ -240,8 +239,14 @@
     text-decoration: underline;
 }
 
+.we-opened{
+@media screen and(min-width: $desktop){
+    margin-left: 100px;
+}}
+
 .before-third-head {
     position: relative;
+
 
 &>h3{
     font-style: normal;
