@@ -19,7 +19,18 @@
     // position: absolute;
     z-index: 5;
     @media screen and (min-width: $tablet) {
-      max-width: $tablet;
+      position: absolute;
+      display: flex;
+      transform-origin: left;
+      transform: rotate(90deg);
+      top: -37%;
+      // width: 680px;
+      min-width: 681px;
+      height: 120px;
+      padding-left: 32px;
+      padding-top: 32px;
+
+      background-color: $white-color;
     }
     @media screen and (min-width: $desktop) {
       max-width: $desktop;
@@ -31,6 +42,8 @@
     width: 69px;
     @media screen and (min-width: $tablet) {
       fill: $main-text;
+      transform: rotate(-90deg);
+      margin-bottom: 32px;
     }
   }
   .menu-button {
@@ -93,6 +106,7 @@
     letter-spacing: 0.1em;
     color: $main-text;
     @media screen and (min-width: $tablet) {
+      display: flex;
       font-size: 12px;
       line-height: 1.33;
       color: $white-color;
