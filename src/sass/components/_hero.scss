@@ -3,12 +3,12 @@
   // width: $mobile;
   height: auto;
 
-  max-width: 1125px;
+  max-width: 1200px;
   min-height: 580px;
   // дал ширину так как при дазмере больше 480 лого на белый фон уходит
   width: auto;
   // обнуляю падинги контейнера, так как затрагивают шапку
-  padding: 0;
+  padding: 0 0 0 100px;
 
   background-image: url('../images/hero_1125.jpg');
 
