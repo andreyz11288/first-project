@@ -249,7 +249,6 @@
     border-bottom: 1px solid $additional-text;
     top: 49%;
     left: 0;
-
 }}
 
 .close-open{
@@ -261,11 +260,9 @@
 }
 
 
-
-
-
-
 .third-section .container{
+    padding-top: 0;
+    padding-bottom: 0;
     justify-content: space-between;
     align-items: center;
     height: 127px;  
@@ -283,14 +280,16 @@
     line-height: 1.66;
     color: $additional-text;
     @media screen and(max-width: 767px){
-    padding-top: 79px;
+    align-self: flex-end;
+    padding-bottom: 44px;
 }}
 
 
 .social-list{
     display: flex;
 @media screen and(max-width: 767px){
-    padding-bottom: 79px;
+    padding-top: 44px;
+    align-self: start;
 }}
 
 .social-list .item{
