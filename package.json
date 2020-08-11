@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Artiss90.github.io/parcel-project-template",
+  "homepage": "https://andreyz11288.github.io/first-project",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
+    "predeploy": "npm run build -- --public-url=/first-project/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
